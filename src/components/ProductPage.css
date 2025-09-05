@@ -1,0 +1,9 @@
+.sticky-carousel {
+  position: sticky;
+  top: 20px; /* distance from top */
+}
+
+.sticky-carousel .carousel-item img {
+  max-height: 700px;
+  object-fit: cover;
+}

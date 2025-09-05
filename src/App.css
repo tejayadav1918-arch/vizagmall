@@ -1,0 +1,102 @@
+/* Add to App.css */
+
+/* Navbar container */
+.navbar {
+  background-color: #0e51f8; /* Tailwind's red-700 */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Inner container */
+
+.nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Links */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0e51f8; /* Tailwind's yellow-400 */
+}
+
+/* Desktop menu */
+.menu-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* Mobile button */
+.menu-mobile-btn {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .menu-mobile-btn {
+    display: none;
+  }
+}
+
+/* Mobile menu */
+.menu-mobile {
+  background-color: #f1edee; /* Tailwind's rose-800 */
+  padding: 1rem;
+}
+
+.mobile-dropdown {
+  margin-left: 1rem;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 2.5rem;
+  left: 0;
+  min-width: 12rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+}

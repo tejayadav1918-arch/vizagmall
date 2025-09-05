@@ -1,0 +1,81 @@
+/* General container padding */
+.container {
+  padding: 20px;
+}
+
+/* Categories Nav */
+.nav-pills .nav-link {
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-weight: 500;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ff4d4f;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #ff7a75;
+  color: white;
+}
+
+/* Product Card */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Price Text */
+.card-text {
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+/* View Product Button */
+.btn-danger {
+  margin-top: auto;
+  background-color: #ff4d4f;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #e04344;
+}
+/* Mobile View Layout */
+@media (max-width: 768px) {
+  .row > .col-12:first-child {
+    flex: 0 0 100%;   /* First card full width */
+    max-width: 100%;
+  }
+
+  .row > .col-12 {
+    flex: 0 0 50%;    /* Others take half width */
+    max-width: 50%;
+  }
+}

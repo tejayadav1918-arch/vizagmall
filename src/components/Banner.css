@@ -1,0 +1,575 @@
+.jam img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* keeps images neat inside cards */
+  border-radius: 8px;
+}
+
+
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center; /* Keep button centered */
+}
+
+/* Make it adapt on smaller devices */
+@media (max-width: 768px) {
+  .hero-overlay {
+    left: 50%; /* Center more naturally on small screens */
+    bottom: 20px;
+    padding: 15px 20px;
+    transform: translate(-50%, 0);
+    width: 80%; /* Give space from sides */
+  }
+
+  .hero-overlay .btn {
+    width: 100%; /* Full-width button */
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.trending-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.trending-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.trending-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trending-card h3 {
+  margin: 12px 0 6px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.trending-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.trending-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+/* Show grid only on desktop */
+.desktop-view {
+  display: grid;
+}
+
+.mobile-view {
+  display: none;
+}
+
+/* On mobile, show carousel instead */
+@media (max-width: 768px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+}
+
+
+.offers-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffcc70, #a294e3);
+  color: #fff;
+}
+
+.offers-banner {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.offers-banner p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+
+
+
+.view-more-btn {
+  margin-top: 15px;
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.view-more-btn:hover {
+  background: #444;
+}
+/* banner.css */
+
+/* Container styling */
+.featured-brands {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow-x: hidden;
+}
+
+/* Heading */
+.featured-brands h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Each slide/card */
+.brand-card {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Brand logo images */
+.brand-card img {
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.1s, box-shadow 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Hover effect */
+.brand-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Slick arrows */
+.slick-prev, .slick-next {
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 35px;
+  color: #333;
+}
+
+/* Dots if enabled */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+}
+/* Remove extra space below images in Slick Slider */
+.new-arrivals-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #8d66aa;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: aliceblue;
+  background-color: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background-color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style:oblique;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+}
+.view-btn1 {
+  padding: 10px 18px;
+  background: #2c19a4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.view-btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+
+  
+
+
+
+
+/* Section background */
+.best-sellers-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e0eafc);
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Grid layout */
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Product card */
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product image */
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* View button */
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #120606;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out;
+}
+
+.view-btn:hover {
+  background: #de2f2f;
+}
+/* Testimonials Section */
+.testimonials-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2065e3, #cfdef3);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+/* Slick Carousel custom styles */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0056b3;
+  opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007bff;
+  font-size: 24px;
+}
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-map {
+  flex: 1;
+  min-height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border: 1px solid #007bff;
+}
+
+.contact-button {
+  padding: 14px;
+  background: #ee4747;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #0056b3;
+}
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #bbb;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
