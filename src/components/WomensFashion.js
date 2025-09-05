@@ -1,8 +1,8 @@
 import React from 'react'
 import './Product.css'
-import { Link } from 'react-router-dom'
+
 import CartButton from "../components/CartButton";
-import { useContext } from 'react';
+
 const product = {
     id: "Saree01",
     name: "Elegant Designer Saree",

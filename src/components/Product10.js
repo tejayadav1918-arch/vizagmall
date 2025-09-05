@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Best.css";
-import CartButton from "../components/CartButton";
+
 
 const Product10 = () => {
   const [index, setIndex] = useState(0);

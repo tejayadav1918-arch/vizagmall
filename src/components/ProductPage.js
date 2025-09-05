@@ -1,6 +1,6 @@
 import React from 'react';
 import {  useParams } from 'react-router-dom';
-import { Container, Row, Col, Card, Carousel,Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel, } from 'react-bootstrap';
 import { products } from './Restaurant1'; // Adjust the import path as necessary
 // Importing products from Restaurant1.js
 import './ProductPage.css'; // We'll add sticky styles here

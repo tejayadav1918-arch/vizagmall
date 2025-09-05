@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Navbar, Nav, NavDropdown, Container, Form, InputGroup, FormControl, Button,Badge } from "react-bootstrap";
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Container, Form, InputGroup, FormControl, Button, } from "react-bootstrap";
 import { BsSearch } from "react-icons/bs"; // Search icon
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home'; // Adjust the import path as necessary
@@ -55,7 +55,7 @@ import Arrivals from "./components/Arrivals";
 import Arrivals1 from "./components/Arrivals1";
 import Arrivals2 from "./components/Arrival2";
 import Arrivals3 from "./components/Arrivals3";
-import { CartProvider } from "./components/CartContext";
+
 import CartPage from "./components/CartPage";
 import AdidasProductPage from "./components/Adidasproducts";
 import ZaraProductPage from "./components/Zaraproducts";

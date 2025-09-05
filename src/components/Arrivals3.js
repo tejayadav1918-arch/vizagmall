@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, } from "react-router-dom";
-import { Container, Row, Col, Button, Carousel,Card } from "react-bootstrap";
+import { Container, Row, Col,  Carousel,Card } from "react-bootstrap";
 import { newSarees } from "./Product4"; // Make sure the path is correct
 import CartButton from "../components/CartButton";
 
@@ -11,8 +11,7 @@ const Arrivals3 = () => {
   if (!product) return <p>Product not found</p>;
 
   // Provide default empty arrays for faqs and reviews
-  const faqs = product.faqs || [];
-  const reviews = product.reviews || [];
+
 
   return (
     <Container className="my-5">
@@ -44,10 +43,10 @@ const Arrivals3 = () => {
 <div className="mt-3">
   <h5>FAQs:</h5>
   <ul>
-    {product.faqs.map((faq, idx) => (
+    {product.faqs.map((faqs, idx) => (
       <li key={idx}>
-        <strong>Q: {faq.q}</strong> <br />
-        A: {faq.a}
+        <strong>Q: {faqs.q}</strong> <br />
+        A: {faqs.a}
       </li>
     ))}
   </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {  useParams } from 'react-router-dom';
-import { Container, Row, Col, Card, Carousel, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel,  } from 'react-bootstrap';
 import { womenproducts } from './Restaurant2';
  // ✅ Import products from WomensPage.js
 import './ProductPage.css';

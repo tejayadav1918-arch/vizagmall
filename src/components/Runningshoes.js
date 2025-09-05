@@ -1,7 +1,7 @@
 import React from 'react'
 import CartButton from "../components/CartButton";
 import './Product.css'
-import { Link } from 'react-router-dom'
+
 
 const Runningshoes = () => {
   // ✅ Define the product object for this page

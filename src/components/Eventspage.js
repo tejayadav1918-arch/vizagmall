@@ -1,10 +1,10 @@
-import React from 'react'
+
 import './Event.css'
-import { useState } from 'react';
+import React  from 'react';
 
 
 const Eventspage = () => {
-   const [showForm, setShowForm] = useState(false);
+  
 
   return (
     <div className="event-page">
